@@ -132,6 +132,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Enable QC2 bufferqueue block-pool
 PRODUCT_PROPERTY_OVERRIDES += vendor.qc2.use.bqpool=1
 
+# Rotator down scaler
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.disable_rotator_downscale=1
+
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fm.transmitter=false
