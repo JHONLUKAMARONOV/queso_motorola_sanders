@@ -162,6 +162,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sdm.debug.disable_skip_validate=1 \
     debug.gralloc.enable_fb_ubwc=1 \
     persist.camera.preview.ubwc=0 \
+    debug.sf.disable_hwcomposer=1 \
     persist.camera.video.ubwc=0 \
     persist.hwc.enable_vds=1 \
     debug.sf.recomputecrop=0 \
