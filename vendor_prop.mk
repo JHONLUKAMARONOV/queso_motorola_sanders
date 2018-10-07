@@ -176,8 +176,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
     mm.enable.qcom_parser=135715 \
-    mm.enable.sec.smoothstreaming=false \
-    mm.enable.smoothstreaming=false \
+    mm.enable.sec.smoothstreaming=true \
+    mm.enable.smoothstreaming=true \
     mmp.enable.3g2=true
 
 # UI
