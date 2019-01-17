@@ -447,7 +447,6 @@ PRODUCT_PACKAGES += \
     libcurl \
     libQWiFiSoftApCfg \
     wificond \
-    wifilogd \
     tcpdump \
     wcnss_service \
     libwpa_client
