@@ -465,3 +465,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.zram.mark_idle_delay_mins=60 \
     ro.zram.first_wb_delay_mins=180 \
     ro.zram.periodic_wb_delay_hours=24 \
+
+# Disable touch heatmap
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.input.video_enabled=false
