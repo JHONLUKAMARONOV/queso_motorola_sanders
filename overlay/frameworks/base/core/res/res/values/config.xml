@@ -605,4 +605,7 @@
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
+
+    <!-- Enable all rotations -->
+    <bool name="config_allowAllRotations">true</bool>
 </resources>
