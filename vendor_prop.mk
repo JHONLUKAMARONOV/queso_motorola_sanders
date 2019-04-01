@@ -69,6 +69,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bluetooth.map=true \
     persist.bt.enableAptXHD=true
 
+# Bluetooth Quality Report (BQR) feature
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bluetooth.bqr.event_mask=14 \
+    persist.bluetooth.bqr.min_interval_ms=500
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=1 \
