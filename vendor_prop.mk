@@ -176,6 +176,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
     mm.enable.qcom_parser=135715 \
+    ro.surface_flinger.protected_contents=true \
     mm.enable.sec.smoothstreaming=true \
     mm.enable.smoothstreaming=true \
     mmp.enable.3g2=true
