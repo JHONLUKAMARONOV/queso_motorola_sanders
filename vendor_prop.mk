@@ -145,6 +145,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.RATE_ADAPT_ENABLE=1 \
+    persist.radio.aosp_usr_pref_sel=true \
     persist.radio.VT_ENABLE=1 \
     persist.radio.VT_HYBRID_ENABLE=1 \
     persist.radio.VT_USE_MDM_TIME=0 \
