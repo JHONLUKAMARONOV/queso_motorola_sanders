@@ -167,4 +167,13 @@ ALL_DEFAULT_INSTALLED_MODULES += $(NUKE_NOTEPAD)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
+EGL_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libEGL_adreno.so
+$(EGL_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf egl/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINK)
+
+subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
+$(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
 endif
