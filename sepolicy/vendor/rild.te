@@ -8,7 +8,4 @@ allow rild fsg_file:lnk_file read;
 allow rild rild_exec:file execute_no_trans;
 
 allow rild fwk_sensor_hwservice:hwservice_manager find;
-
-allow rild proc:file { open read };
-allow rild unlabeled:dir getattr;
-allow rild unlabeled:file { getattr open read };
+allow rild default_android_vndservice:service_manager { add find };
