@@ -275,5 +275,8 @@ WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-04-01
 
+# Set boot SPL
+BOOT_SECURITY_PATCH = $(VENDOR_SECURITY_PATCH)
+
 BOARD_ROOT_EXTRA_SYMLINKS := \
 	/vendor/firmware_mnt/image:firmware/image
