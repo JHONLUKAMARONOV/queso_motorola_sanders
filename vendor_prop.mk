@@ -75,6 +75,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #    persist.bluetooth.bqr.event_mask=14 \
 #    persist.bluetooth.bqr.min_interval_ms=500
 
+# Shutdown time
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.vendor.shutdown.waittime=500
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=1 \
