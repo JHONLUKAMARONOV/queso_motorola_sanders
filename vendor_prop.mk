@@ -41,6 +41,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.snd_mon.enable=false \
     vendor.audio.playback.mch.downsample=true \
     vendor.audio.safx.pbe.enabled=true \
+    vendor.audio.feature.multi_voice_session.enable=true \
     vendor.audio.tunnel.encode=false \
     vendor.use.voice.path.for.pcm.voip=false
 
