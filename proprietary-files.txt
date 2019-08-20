@@ -812,3 +812,10 @@ vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
 vendor/etc/init/ipa_fws.rc|509042b86b4953ca1dc1b420942d9ded839ee502
 vendor/etc/init/ipacm-diag.rc|cacc1fce2e7123f6fdcaa408e66c3dfb9870f1bf
 
+# Graphics (Postprocessing) - from AquariusX2 Pro (Zangya Pro) PKQ1.190118.001/920
+vendor/lib/vendor.display.color@1.0.so|5910d16429426831799379bef45a91fb73f1b96b
+vendor/lib64/vendor.display.color@1.0.so|346620084ad60243985250d4082945e6b267c501
+vendor/lib64/vendor.display.color@1.1.so|8fda7c6969fa1ea2104c0c3ebb61f89bf3e22c7b
+vendor/lib64/vendor.display.color@1.2.so|796116f179007448a9fe71c63a18b29030322337
+vendor/lib64/vendor.display.postproc@1.0.so|c6e7afb4b638425e68ca7cecd0931369db506851
+
