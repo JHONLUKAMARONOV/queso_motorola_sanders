@@ -523,6 +523,10 @@
     <!-- Whether navigation bar can be disabled (for devices with hardware keys) -->
     <bool name="config_canDisableNavigationBar">true</bool>
 
+    <!-- Default color temperature, in Kelvin, to tint the screen when Night display is
+         activated. -->
+    <integer name="config_nightDisplayColorTemperatureDefault">3339</integer>
+
     <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
