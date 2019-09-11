@@ -920,8 +920,8 @@ on property:sys.boot_completed=1
     setprop sys.io.scheduler bfq
 
     # Enable ZRAM on boot_complete
+    rm /data/unencrypted/zram_swap
     swapon_all /system/vendor/etc/fstab.qcom
-    # swapon /dev/block/zram0 -p 32758
 
 on property:ro.boot.ram=2GB
     write /sys/block/zram0/disksize 1073741824
