@@ -439,13 +439,6 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
-service vendor.charger /system/bin/charger
-    class charger
-    user system
-    capabilities SYS_BOOT
-    group system graphics input
-    seclabel u:r:healthd:s0
-
 # Allow usb charging to be disabled peristently
 on property:persist.usb.chgdisabled=1
     write /sys/class/power_supply/battery/charging_enabled 0
