@@ -178,6 +178,10 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.qc2.use.bqpool=1
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_rotator_downscale=1
 
+# Netflix
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q660-13149-1
+
 # Wifi-Display
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
