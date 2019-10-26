@@ -344,6 +344,7 @@ PRODUCT_PACKAGES += \
     init.mmi.usb.rc \
     init.qcom.rc \
     init.qcom.sensors.sh \
+    init.safailnet.rc \
     init.sanders.rc \
 
 PRODUCT_COPY_FILES += \
