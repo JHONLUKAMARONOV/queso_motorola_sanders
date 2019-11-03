@@ -458,3 +458,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Disable touch heatmap
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.input.video_enabled=false
+
+# USB debugging at boot
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
