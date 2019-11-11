@@ -203,6 +203,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.fm.transmitter=false \
     vendor.hw.fm.init=0
 
+# OpenGLRenderer (libhwui) properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.zygote.disable_gl_preload=false
+
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.jbims=1 \
