@@ -194,14 +194,6 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.qc2.use.bqpool=1
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_rotator_downscale=1
 
-# Enable Codec 2.0
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.media.codec2=2 \
-
-# Create input surface on the framework side
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.stagefright.c2inputsurface=-1
-
 # Wifi-Display
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
