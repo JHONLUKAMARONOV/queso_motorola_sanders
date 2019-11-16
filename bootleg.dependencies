@@ -1,0 +1,7 @@
+[
+  {
+    "repository": "ArrowOS/android_system_qcom",
+    "target_path": "system/qcom",
+    "branch": "arrow-10.0"
+  }
+[
