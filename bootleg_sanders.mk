@@ -30,7 +30,7 @@ $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
-BOOTLEGGERS_BUILD_TYPE := Shishufied
+BOOTLEGGERS_RELEASETYPE := Shishufied
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
@@ -42,6 +42,7 @@ PRODUCT_MODEL := Moto G (5S) Plus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="sanders" \
+    BOOTLEGGERS_MAINTAINER="Melvin" \
     TARGET_DEVICE="sanders" \
     PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36 9fea release-keys"
 
