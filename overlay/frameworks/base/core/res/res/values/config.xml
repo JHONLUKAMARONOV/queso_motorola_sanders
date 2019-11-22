@@ -630,8 +630,8 @@
     <!-- Enable all rotations -->
     <bool name="config_allowAllRotations">true</bool>
 
-    <!-- True if the firmware supports Wi-Fi link probing -->
-    <bool name="config_wifi_link_probing_supported">true</bool>
+    <!-- True if the firmware supports Wi-Fi link probing
+    <bool name="config_wifi_link_probing_supported">true</bool> -->
 
     <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
          For this time after the screen turns on, the Power Manager
