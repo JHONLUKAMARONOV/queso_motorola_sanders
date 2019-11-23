@@ -109,14 +109,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.aux.packagelist=com.motorola.camera2,com.google.android.Pixel2Mod \
     vendor.camera.hal1.packagelist=com.instagram.android,com.whatsapp
 
-# CNE
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.cne.feature=1 \
-    persist.cne.logging.qxdm=3974 \
-    persist.cne.rat.wlan.chip.oem=WCN \
-    persist.vendor.dpm.feature=0 \
-    persist.sys.cnd.iwlan=1
-
 #property to enable fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.qfp=false
