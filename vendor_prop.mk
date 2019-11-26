@@ -70,9 +70,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.bt.enableAptXHD=true
 
 # Bluetooth Quality Report (BQR) feature
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.bluetooth.bqr.event_mask=14 \
-    persist.bluetooth.bqr.min_interval_ms=500
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    persist.bluetooth.bqr.event_mask=14 \
+#    persist.bluetooth.bqr.min_interval_ms=500
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -136,8 +136,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.hw=1 \
-    debug.sf.hw=1 \
+    debug.sf.enable_hwc_vds=1 \
+    debug.egl.hw=0 \
+    debug.sf.hw=0 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.early_phase_offset_ns=1500000 \
     debug.sf.early_app_phase_offset_ns=1500000 \
@@ -148,7 +149,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
     ro.sf.lcd_density=480 \
-    persist.debug.wfd.enable=1 \
     sdm.debug.disable_skip_validate=1 \
     debug.gralloc.enable_fb_ubwc=1 \
     persist.camera.preview.ubwc=0 \
@@ -160,9 +160,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.display.disable_skip_validate=1 \
-    persist.debug.wfd.enable=1 \
-    vendor.video.disable.ubwc=1 \
-    persist.sys.wfd.virtual=0 \
     vendor.gralloc.disable_wb_ubwc=1 \
     persist.sys.wfd.nohdcp=1
 
@@ -171,8 +168,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
 # Enable backpressure for GL comp
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_gl_backpressure=1
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    debug.sf.enable_gl_backpressure=1
 
 # Enable QC2 bufferqueue block-pool
 PRODUCT_PROPERTY_OVERRIDES += vendor.qc2.use.bqpool=1
@@ -200,8 +197,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.hw.fm.init=0
 
 # OpenGLRenderer (libhwui) properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.zygote.disable_gl_preload=false
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.zygote.disable_gl_preload=false
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -226,9 +223,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.qcom_parser=135715 \
     ro.surface_flinger.protected_contents=false \
     mm.enable.sec.smoothstreaming=true \
-    media.stagefright.thumbnail.prefer_hw_codecs=true \
     mm.enable.smoothstreaming=true \
-    mmp.enable.3g2=true
+    mmp.enable.3g2=true \
+    media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -243,7 +240,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.snapshot_enabled=1 \
     persist.radio.calls.on.ims=true \
     persist.radio.domain.ps=0 \
-    persist.rmnet.mux=enabled \
     persist.radio.REVERSE_QMI=0 \
     persist.sys.cnd.iwlan=1 \
     persist.cne.logging.qxdm=3974 \
@@ -265,10 +261,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_1="" \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3=""
-
-# Memory optimizations
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -316,8 +308,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.REVERSE_QMI=0 \
     persist.radio.ROTATION_ENABLE=1 \
     persist.radio.adb_log_on=0 \
-    persist.radio.calls.on.ims=true \
-    persist.radio.domain.ps=0 \
     persist.radio.sar_sensor=1 \
     persist.vendor.radio.sib16_support=1 \
     persist.radio.sib16_support=1 \
@@ -325,29 +315,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.multiple=false \
     persist.vendor.radio.eri64_as_home=1 \
     persist.vendor.radio.data_con_rprt=1 \
-    persist.vendor.radio.force_on_dc=true \
-    persist.radio.custom_ecc=1 \
-    persist.radio.data_con_rprt=1 \
-    persist.vendor.radio.data_ltd_sys_ind=1 \
-    persist.radio.data_ltd_sys_ind=1 \
-    persist.vendor.radio.ignore_dom_time=10 \
-    persist.radio.ignore_dom_time=10 \
-    persist.radio.rat_on=combine \
-    persist.radio.is_wps_enabled=true \
-    persist.radio.videopause.mode=1 \
-    persist.radio.sap_silent_pin=1 \
-    persist.radio.always_send_plmn=true \
-    persist.rcs.supported=1 \
     ro.telephony.default_network=10,0 \
-    persist.radio.msgtunnel.start=true \
     persist.radio.apm_sim_not_pwdn=1 \
-    persist.vendor.radio.qcril_uim_vcc_feature=1 \
     persist.radio.schd.cache=3500 \
-    persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.lte_vrte_ltd=1 \
     persist.vendor.radio.cs_srv_type=1 \
-    persist.dbg.ims_volte_enable=1 \
-    persist.data.qmi.adb_logmask=0 \
     telephony.lteOnCdmaDevice=1
 
 # RmNet Data
@@ -400,7 +372,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.bpt=0x2ee5 \
     ro.usb.bpt_adb=0x2ee6 \
     ro.usb.bpteth=0x2ee7 \
-    ro.usb.bpteth_adb=0x2ee8
+    ro.usb.bpteth_adb=0x2ee8 \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
 
 # Volte
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -445,10 +421,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Disable touch heatmap
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.input.video_enabled=false
-
-# USB debugging at boot
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp,adb \
-    ro.adb.secure=0 \
-    ro.secure=0 \
-    ro.debuggable=1
