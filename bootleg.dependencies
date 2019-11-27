@@ -3,5 +3,11 @@
     "repository": "ArrowOS/android_system_qcom",
     "target_path": "system/qcom",
     "branch": "arrow-10.0"
-  }
+  },
+  {
+      "remote":"github",
+      "repository":"LineageOS/android_packages_resources_devicesettings",
+      "target_path":"packages/resources/devicesettings",
+      "branch":"lineage-17.0"
+   }
 [
