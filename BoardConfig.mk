@@ -244,9 +244,6 @@ TARGET_USES_OLD_MNC_FORMAT := true
 #include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
-#Soong
-PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
-
 # Thermal
 USE_DEVICE_SPECIFIC_THERMAL := true
 
