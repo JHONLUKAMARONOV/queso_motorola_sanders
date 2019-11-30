@@ -808,3 +808,7 @@ vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
 vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
 vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
 
+# IPA - from davinci-user 10 QKQ1.190825.002 9.10.9 release-keys
+vendor/etc/init/ipa_fws.rc|509042b86b4953ca1dc1b420942d9ded839ee502
+vendor/etc/init/ipacm-diag.rc|cacc1fce2e7123f6fdcaa408e66c3dfb9870f1bf
+
