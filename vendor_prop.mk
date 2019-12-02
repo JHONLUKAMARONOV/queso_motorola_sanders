@@ -46,6 +46,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.safx.pbe.enabled=true \
     vendor.audio.tunnel.encode=false \
     ro.config.media_vol_steps=25 \
+    vendor.audio.feature.incall_music.enable=true \
     vendor.use.voice.path.for.pcm.voip=false \
     hpx_send_params=1
 
