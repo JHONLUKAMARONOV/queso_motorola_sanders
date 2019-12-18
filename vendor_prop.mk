@@ -81,7 +81,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    camera.disable_zsl_mode=1 \
+    camera.disable_zsl_mode=true \
     persist.sys.camera.display.umax=1920x1080 \
     persist.sys.camera.display.lmax=1280x720 \
     camera.mot.startup_probing=0 \
@@ -91,7 +91,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.HAL3.enabled=1 \
     persist.camera.is_mode=4 \
     camera.is_mode=4 \
-    persist.camera.disable_zsl_mode=1 \
     persist.camera.gyro.android=4 \
     camera.gyro.android=4 \
     persist.camera.tof.direct=1 \
