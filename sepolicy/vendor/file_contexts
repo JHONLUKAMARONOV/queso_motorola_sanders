@@ -1,5 +1,6 @@
-# FSG
-/fsg                                                     u:object_r:fsg_file:s0
+# Firmware and FSG
+/firmware(/.*)?          u:object_r:firmware_file:s0
+/fsg(/.*)?               u:object_r:fsg_file:s0
 
 # ADSP
 /sys/kernel/aov(/.*)?                                    u:object_r:sysfs_adsp:s0
