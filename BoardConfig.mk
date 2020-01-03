@@ -227,7 +227,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
 # Display
-TARGET_SCREEN_DENSITY := 400
+TARGET_SCREEN_DENSITY := 487
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
