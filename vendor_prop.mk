@@ -90,7 +90,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.max.previewfps=60 \
     vidc.enc.dcvs.extra-buff-count=2 \
     vidc.dec.disable.split.cpu=1 \
-    vendor.video.disable.ubwc=1 \
     vendor.camera.aux.packagelist=com.motorola.camera2,com.google.android.Pixel2Mod \
     camera.hal1.packagelist=com.instagram.android,com.whatsapp
 
@@ -98,7 +97,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.logging.qxdm=3974 \
     persist.vendor.cne.rat.wlan.chip.oem=WCN \
-    persist.vendor.dpm.feature=0 \
     persist.vendor.sys.cnd.iwlan=1
 
 #property to enable fingerprint
@@ -116,7 +114,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
     ro.sf.lcd_density=400 \
-    persist.debug.wfd.enable=1 \
     sdm.debug.disable_skip_validate=1 \
     debug.gralloc.enable_fb_ubwc=1 \
     persist.camera.preview.ubwc=0 \
@@ -164,24 +161,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 \
-    persist.radio.data_lte_sys_ind=1
-    persist.vendor.radio.force_on_dc=true \
-    persist.radio.custom_ecc=1 \
-    persist.radio.data_con_rprt=1 \
-    persist.vendor.radio.data_ltd_sys_ind=1 \
-    persist.radio.data_ltd_sys_ind=1 \
-    persist.vendor.radio.ignore_dom_time=10 \
-    persist.radio.ignore_dom_time=10 \
-    persist.radio.rat_on=combine \
-    persist.radio.is_wps_enabled=true \
-    persist.radio.videopause.mode=1 \
-    persist.radio.sap_silent_pin=1 \
-    persist.radio.always_send_plmn=true \
-    persist.rcs.supported=1 \
-    persist.dbg.ims_volte_enable=1 \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1 \
     persist.radio.data_lte_sys_ind=1\
     persist.vendor.radio.voice_on_lte=1 \
     persist.radio.poweron_opt=1 \
@@ -224,9 +203,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank=0 \
     media.aac_51_output_enabled=true \
     mm.enable.qcom_parser=135715 \
-    ro.surface_flinger.protected_contents=false \
     mm.enable.sec.smoothstreaming=true \
-    media.stagefright.thumbnail.prefer_hw_codecs=true \
     mm.enable.smoothstreaming=true \
     mmp.enable.3g2=true
 
@@ -250,10 +227,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.mode=concurrent \
     persist.vendor.radio.snapshot_timer=22 \
     persist.vendor.radio.snapshot_enabled=1 \
-    persist.radio.calls.on.ims=true \
-    persist.radio.domain.ps=0 \
-    persist.rmnet.mux=enabled \
-    persist.radio.REVERSE_QMI=0 \
     persist.sys.cnd.iwlan=1 \
     persist.cne.logging.qxdm=3974 \
     persist.vendor.ims.disableDebugLogs=1 \
@@ -289,14 +262,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.qmi.adb_logmask=0 \
     persist.radio.apn_delay=5000 \
-    persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.dfr_mode_set=1 \
     persist.vendor.radio.add_power_save=1 \
     persist.vendor.dpm.feature=0 \
     persist.vendor.radio.force_get_pref=1 \
-    persist.radio.msgtunnel.start=true \
     persist.vendor.radio.no_wait_for_card=1 \
     persist.vendor.radio.oem_ind_to_both=0 \
     persist.vendor.radio.relay_oprt_change=1 \
@@ -377,10 +347,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_app_phase_offset_ns=1500000 \
     debug.sf.early_gl_phase_offset_ns=3000000 \
     debug.sf.early_gl_app_phase_offset_ns=15000000
-
-# Enable backpressure for GL comp
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_gl_backpressure=1
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
