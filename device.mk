@@ -300,7 +300,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += \
+PRODUCT_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 # Perf configs
