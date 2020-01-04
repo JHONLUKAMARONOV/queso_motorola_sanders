@@ -418,7 +418,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Why does this even work
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.fw.bg_apps_limit=60 \
-    ro.sys.fw.dex2oat_thread_count=4 \
+    ro.sys.fw.dex2oat_thread_count=8 \
     dalvik.vm.boot-dex2oat-threads=8 \
     dalvik.vm.dex2oat-threads=8 \
     dalvik.vm.image-dex2oat-threads=8 \
