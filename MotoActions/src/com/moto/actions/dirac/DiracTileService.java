@@ -1,4 +1,4 @@
-package org.lineageos.settings.dirac;
+package com.moto.actions.dirac;
 
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
@@ -24,6 +24,7 @@ public class DiracTileService extends TileService {
         tile.updateTile();
 
         super.onStartListening();
+
     }
 
     @Override
