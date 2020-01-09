@@ -393,6 +393,10 @@ on post-fs-data
     #Create directory for hostapd
     mkdir /data/hostapd 0770 system wifi
 
+    # NFC local data and nfcee xml storage
+    mkdir /data/nfc 0770 nfc nfc
+    mkdir /data/nfc/param 0770 nfc nfc
+
     # Create /data/vendor/time folder for time-services
     mkdir /data/vendor/time/ 0700 system system
 
