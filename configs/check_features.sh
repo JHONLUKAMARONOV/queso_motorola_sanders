@@ -14,6 +14,9 @@ if [ "$sku" = "XT1806" ]; then
     rm /vendor/etc/permissions/android.hardware.nfc.hce.xml
     rm /vendor/etc/permissions/com.android.nfc_extras.xml
     rm -r /system/app/NfcNci
+else
+    # Only XT1806 variant got a compass
+    rm /vendor/etc/permissions/android.hardware.sensor.compass.xml
 fi
 
 if ! [ "$sku" = "XT1802" ]; then
@@ -24,8 +27,8 @@ if ! [ "$sku" = "XT1802" ]; then
     rm /vendor/lib64/libdtvtuner.so
     rm /vendor/lib/libdtvhal.so
     rm /vendor/lib64/libdtvhal.so
-    rm -r /vendor/app/DTVPlayer
-    rm -r /vendor/app/DTVService
+    rm -r /system/system/priv-app/DTVPlayer
+    rm -r /system/system/priv-app/DTVService
 fi
 
 if [ "$sku" = "XT1804" ]; then
@@ -34,4 +37,3 @@ if [ "$sku" = "XT1804" ]; then
 else
     rm /vendor/etc/thermal-engine-INDIA.conf
 fi
-
