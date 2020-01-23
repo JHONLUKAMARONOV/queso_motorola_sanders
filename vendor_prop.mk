@@ -64,8 +64,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.sap=true \
     ro.bluetooth.dun=true \
     ro.qualcomm.bluetooth.map=true \
-    persist.bt.enableAptXHD=true \
-    persist.bluetooth.bluetooth_audio_hal.disabled=true
+    persist.bt.enableAptXHD=true
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -149,8 +148,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.RATE_ADAPT_ENABLE=1 \
     persist.radio.aosp_usr_pref_sel=true \
-    persist.radio.VT_ENABLE=1 \
-    persist.radio.VT_HYBRID_ENABLE=1 \
     persist.radio.VT_USE_MDM_TIME=0 \
     persist.ims.disableADBLogs=2 \
     persist.ims.disableDebugLogs=0 \
@@ -194,7 +191,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.downgrade_pressure=100 \
     ro.lmk.kill_heaviest_task=true \
     ro.lmk.kill_timeout_ms=15 \
-    ro.lmk.use_minfree_levels=true \
     ro.lmk.use_minfree_levels=true \
     ro.lmk.enhance_batch_kill=true \
     ro.lmk.vmpressure_file_min=80640
