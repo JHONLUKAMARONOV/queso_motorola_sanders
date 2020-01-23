@@ -43,10 +43,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Melvin" \
     PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36 9fea release-keys" \
 
-BUILD_FINGERPRINT := google/walleye/walleye:9/PPP3.180510.008/4811556:user/release-keys
+BUILD_FINGERPRINT := google/coral/coral:10/QQ1B.200105.004/6031802:user/release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint="google/walleye/walleye:9/PPP3.180510.008/4811556:user/release-keys"
+    ro.build.fingerprint="google/coral/coral:10/QQ1B.200105.004/6031802:user/release-keys"
 
 # for specific
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
